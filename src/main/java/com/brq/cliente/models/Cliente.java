@@ -18,12 +18,14 @@ public class Cliente implements Serializable{
 	private String sobrenome;
 	private String email;
 	private String sexo;
-	private String endereco;
+	private String Endereco;
 	private String cidade;
 	private String estado;
+	private String cep;
 	private String telefone;
 	private String rg;
 	private String cpf;
+	
 	
 	public Long getId() {
 		return id;
@@ -56,10 +58,10 @@ public class Cliente implements Serializable{
 		this.sexo = sexo;
 	}
 	public String getEndereco() {
-		return endereco;
+		return Endereco;
 	}
 	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+		Endereco = endereco;
 	}
 	public String getCidade() {
 		return cidade;
@@ -72,6 +74,12 @@ public class Cliente implements Serializable{
 	}
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+	public String getCep() {
+		return cep;
+	}
+	public void setCep(String cep) {
+		this.cep = cep;
 	}
 	public String getTelefone() {
 		return telefone;
